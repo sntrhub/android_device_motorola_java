@@ -14,16 +14,13 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 
 LOCAL_PATH := device/motorola/java
 
-# Boot control HAL
+# HAL: Boot Control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
+    android.hardware.boot@1.0-impl.recovery \
     android.hardware.boot@1.0-service
 
 PRODUCT_PACKAGES += \
-    bootctrl.ums512
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.ums512 \
     libgptutils \
     libz \
     libcutils
