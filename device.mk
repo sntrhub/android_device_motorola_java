@@ -21,7 +21,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-service
 
 PRODUCT_PACKAGES += \
-    libgptutils \
     libz \
     libcutils
 
